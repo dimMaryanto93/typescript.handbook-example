@@ -25,3 +25,15 @@ let hex: number = 0xf00d;
 let binary: number = 0b1010;
 let minus: number = -10;
 ```
+
+### String
+
+Tipe data string udah pasti, pada dasarnya string di typescript menggunakan **double quotes** dan **single quotes** tapi disini ada
+yang spesial dari typescript yaitu bisa menggunakan **language expresion** dengan menggunakan **backtick**
+
+```ts
+
+let firstName: string = "Dimas";
+let lastName: string = "Maryanto";
+let fullname: string = `${firstName} ${lastName}`;
+```
