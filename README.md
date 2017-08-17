@@ -167,4 +167,32 @@ let lamborghiniAventador = new Car("Lamborghini Aventador LP-700SV", 8, "Lamborg
 console.info(lamborghiniAventador);
 ```
 
+## Iterator dan Generator
+
+Pada dasarnya iterator dan generator juga sama seperti halnya **Java** dan **C#** hanya saja ada beberapa perbedaan di semantiknya seperti berikut:
+
+### for..of statement
+
+untuk iterator yang satu ini dia akan directly mengambil isinya dari array contohnya:
+
+```ts
+let listManufacture = ["Honda", "Yamaha", "Kawasaki", "Suzuki", "KTM", "Ducati"];
+for (let manufacture of listManufacture) {
+    console.info(manufacture);
+}
+// return Honda, Yamaha, Kawasaki....
+```
+
+### for..in statement
+
+untuk iterator ini dia akan mengembalikan indexnya terlebih dahulu, contohnya seperti berikut:
+
+```ts
+let helmets = ["Nolan", "Arai", "KYT", "Shark"];
+for (let helmet in helmets) {
+    console.info(helmet);
+}
+// return 0, 1, 2, 3
+```
+
 
