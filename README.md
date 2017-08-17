@@ -77,3 +77,25 @@ apaIni = false;
 console.info("tipe data dari variable apaIni adalah " + typeof apaIni);
 ```
 
+## Interfaces
+
+Salah satu inti dari prinsip Typescript adalah pengecekan tipe yang memiliki nilai.
+hal ini disebut "duck typing" atau "structural subtyping".
+
+```ts
+interface LabelledValue{
+    label: string;
+}
+
+function printLabel(labelObj: LabelledValue){
+    console.info(labelObj.label);
+}
+
+let myObj = {size: 10, label: "Size 10 object"};
+printLabel(myObj);
+```
+
+Dalam interface tersebut akan mengecek apakah terdapat variable dengan nama `label` karena itu wajib, meskipun `myObj` 
+memiliki variabel lebih dari 1 tetapi klo tidak ada variabel dengan nama dan tipe data yang sesuai `label` maka akan terjadi error compilation.
+
+
