@@ -96,6 +96,37 @@ printLabel(myObj);
 ```
 
 Dalam interface tersebut akan mengecek apakah terdapat variable dengan nama `label` karena itu wajib, meskipun `myObj` 
-memiliki variabel lebih dari 1 tetapi klo tidak ada variabel dengan nama dan tipe data yang sesuai `label` maka akan terjadi error compilation.
+memiliki variabel lebih dari 1 tetapi klo tidak ada variabel dengan nama dan tipe data yang sesuai `label` 
+maka akan terjadi error compilation.
+
+
+## Classes
+
+Kelas atau `Class` di typescript pada dasarnya sama dengan bahasa **C#** dan **Java** contohnya seperti berikut:
+
+```ts
+class Greeter {
+    greeting: string;
+
+    constructor(message: string) {
+        this.greeting = message;
+    }
+
+    greet() {
+        return "Halo, " + this.greeting;
+    }
+}
+
+let greeter = new Greeter("Dimas Maryanto");
+console.info(greeter.greet());
+```
+
+### Inheritance
+
+Sifat dari class yang paling sering digunakan adalah inheritance atau pewarisan. contohnya seperti berikut:
+
+```ts
+
+```
 
 
