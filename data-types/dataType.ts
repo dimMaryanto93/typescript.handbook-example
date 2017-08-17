@@ -18,3 +18,9 @@ let lastName: string = "Maryanto";
 let fullname: string = `${firstName} ${lastName}`;
 let umurku: string = `Umur saya adalah ${yearNow - birthyear} tahun`;
 console.info("Nama lengkap saya adalah " + fullname + " " + umurku);
+
+// tipe data array
+let listHobbies: string[] = ["Riding", "Coding", "Traveling"];
+let listDreamBikes: Array<string> = ["CBR1000RR", "ZX10R", "Panigale 1899"];
+console.info("Hobi saya adalah " + listHobbies);
+console.info("Motor favorite saya adalah " + listDreamBikes[2]);

@@ -32,8 +32,20 @@ Tipe data string udah pasti, pada dasarnya string di typescript menggunakan **do
 yang spesial dari typescript yaitu bisa menggunakan **language expresion** dengan menggunakan **backtick**
 
 ```ts
-
 let firstName: string = "Dimas";
 let lastName: string = "Maryanto";
 let fullname: string = `${firstName} ${lastName}`;
+```
+
+### Array
+
+Typescript sama seperti Javascript, bisa membuat array dalam sebuah variable. Ada 2 cara untuk membuat array
+yaitu dengan menggunakan `[]` atau gaya seperti di Java, C++ dll `Array<data-type>`.
+
+```ts
+let listHobbies: string[] = ["Riding", "Coding", "Traveling"];
+console.info("Hobi saya adalah " + listHobbies);
+
+let listDreamBikes: Array<string> = ["CBR1000RR", "ZX10R", "Panigale 1899"];
+console.info("Motor favorite saya adalah " + listDreamBikes[2]);
 ```
