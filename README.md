@@ -49,3 +49,31 @@ console.info("Hobi saya adalah " + listHobbies);
 let listDreamBikes: Array<string> = ["CBR1000RR", "ZX10R", "Panigale 1899"];
 console.info("Motor favorite saya adalah " + listDreamBikes[2]);
 ```
+
+### Enum
+
+Enum di typescript pada dasarnya sama dengan bahasa pemograman lainnya contohnya seperti berikut:
+
+```ts
+
+enum JenisTransaksi {Tunai, NonTunai}
+
+let bayar: JenisTransaksi = JenisTransaksi.NonTunai;
+console.info("Nomor rekening melakukan pembambayaran dengan method " + JenisTransaksi[bayar]);
+```
+
+### Any
+
+Typescript juga bisa menggunakan dynamic tipe data, artinya jadi kita gak tau tipe data apa yang akan dikembalikan contohnya seperti berikut:
+
+```ts
+let apaIni: any = 4;
+console.info("tipe data dari variable apaIni adalah " + typeof apaIni);
+
+apaIni = "Halo world";
+console.info("tipe data dari variable apaIni adalah " + typeof apaIni);
+
+apaIni = false;
+console.info("tipe data dari variable apaIni adalah " + typeof apaIni);
+```
+
