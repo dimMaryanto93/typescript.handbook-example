@@ -195,4 +195,8 @@ for (let helmet in helmets) {
 // return 0, 1, 2, 3
 ```
 
+## Modules
+
+Dimulai dari ECMAScript 2015, Javascript memiliki konsep modules. 
+
 
